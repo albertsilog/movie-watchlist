@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Movie Watchlist</title>
+        <!-- Font Awesome CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="header-container">
+                <h1>Find your film</h1>
+                <a href="./watchlist.html">My watchlist</a>
+            </div>
+        </header>
+        <form id="search-form">
+            <div id="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input 
+                    type="text" 
+                    name="search-field" 
+                    id="search-field" 
+                    placeholder="Search for a movie"
+                    aria-label="search field"
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" id="search-btn">Search</button>
+            </div>
+        </form>
+        <main>
+            <div id="search-results">
+                <div id="initial-message">
+                    <i class="fa-solid fa-film"></i>
+                    <h3>Start exploring</h3>
+                </div>
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
